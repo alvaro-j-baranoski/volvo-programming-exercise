@@ -5,16 +5,15 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VolvoProgrammingExercise.Presentation", "VolvoProgrammingExercise.Presentation\VolvoProgrammingExercise.Presentation.csproj", "{C2AC69C8-FD57-4E7C-B256-8162AA07BC74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VolvoProgrammingExercise.Application", "VolvoProgrammingExercise.Application\VolvoProgrammingExercise.Application.csproj", "{0BB7E432-A433-4B53-AEF7-603FEDEC64FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VolvoProgrammingExercise.Application", "VolvoProgrammingExercise.Application\VolvoProgrammingExercise.Application.csproj", "{0BB7E432-A433-4B53-AEF7-603FEDEC64FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VolvoProgrammingExercise.Domain", "VolvoProgrammingExercise.Domain\VolvoProgrammingExercise.Domain.csproj", "{442D7326-9286-4E38-AC55-9D09C39609AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VolvoProgrammingExercise.Domain", "VolvoProgrammingExercise.Domain\VolvoProgrammingExercise.Domain.csproj", "{442D7326-9286-4E38-AC55-9D09C39609AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VolvoProgrammingExercise.Persistance", "VolvoProgrammingExercise.Persistance\VolvoProgrammingExercise.Persistance.csproj", "{81DEB260-2C56-4FC8-AFB4-29E85F65F260}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VolvoProgrammingExercise.Persistance", "VolvoProgrammingExercise.Persistance\VolvoProgrammingExercise.Persistance.csproj", "{81DEB260-2C56-4FC8-AFB4-29E85F65F260}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{2A634261-3D85-447B-8AD6-FE7D659E370B}"
-	ProjectSection(SolutionItems) = preProject
-		docker-compose.yml = docker-compose.yml
-	EndProjectSection
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{0E1D30AC-0954-4B07-9789-53148778D6F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +37,10 @@ Global
 		{81DEB260-2C56-4FC8-AFB4-29E85F65F260}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81DEB260-2C56-4FC8-AFB4-29E85F65F260}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81DEB260-2C56-4FC8-AFB4-29E85F65F260}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E1D30AC-0954-4B07-9789-53148778D6F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E1D30AC-0954-4B07-9789-53148778D6F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E1D30AC-0954-4B07-9789-53148778D6F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E1D30AC-0954-4B07-9789-53148778D6F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
