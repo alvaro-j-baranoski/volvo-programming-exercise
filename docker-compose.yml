@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  # 1. Database Service
+  db:
+    # Use the official Microsoft SQL Server image for Linux
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: sqlserver-fleet-db
+    environment:
+      # Required: Set the SA (System Administrator) password
+      # ***Change this password for production***
+      SA_PASSWORD: "YourStrongPassword123!" 
+      # Required: Accept the End-User Licensing Agreement
+      ACCEPT_EULA: "Y"
+    ports:
+      # Map container port 1433 to host port 1433
+      - "1433:1433" 
+    # volumes:
+      # Optional: Persist the data outside the container
+      # This ensures your data isn't lost if the container is stopped/removed
+      # - sqlserver_data:/var/opt/mssql
+      # Optional: Run an initial setup script
+      # - ./setup/init.sql:/docker-entrypoint-initdb.d/init.sql
+      
+  # 2. API Service (Placeholder for your .NET app)
+  # You would add your API service here later
+  # api:
+  #   build:
+  #     context: .
+  #     dockerfile: Presentation/Dockerfile
+  #   ports:
+  #     - "8080:80" 
+  #   depends_on:
+  #     - db # Ensure the database starts before the API
+
+# Define the volume for persistent data
+volumes:
+  sqlserver_data: {}

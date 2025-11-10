@@ -13,4 +13,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\VolvoProgrammingExercise.Application\VolvoProgrammingExercise.Application.csproj" />
+    <ProjectReference Include="..\VolvoProgrammingExercise.Domain\VolvoProgrammingExercise.Domain.csproj" />
+    <ProjectReference Include="..\VolvoProgrammingExercise.Persistance\VolvoProgrammingExercise.Persistance.csproj" />
+  </ItemGroup>
+
 </Project>
